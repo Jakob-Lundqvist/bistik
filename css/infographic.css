@@ -16,6 +16,7 @@
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
+  margin-top: 20px;
 }
 .info-text h3 {
   font-size: 0.8rem;
@@ -39,4 +40,13 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+#epipen:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 200, 0, 1));
+}
+#fly_swatter:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 200, 0, 1));
+}
+#bi:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 200, 0, 1));
 }

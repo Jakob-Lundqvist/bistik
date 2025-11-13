@@ -4,7 +4,7 @@
 
 #form-section,
 #form-summary {
-  background-color: var(--info-background-color);
+  background-color: var(--color-card-bg);
   padding: 0;
 }
 #form-summary h2 {
@@ -29,4 +29,111 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+}
+
+input,
+textarea {
+  border: none;
+  padding: 0.25rlh;
+  background-color: #dbe2f5;
+}
+
+button {
+  background-color: #ff4b00;
+  color: #fffae2;
+  border-radius: 6px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
+  margin-top: 3em;
+  border: none;
+  justify-self: end;
+}
+Button::after {
+  content: " \2192";
+}
+
+.error-message {
+  color: darkred;
+}
+label {
+  width: fit-content;
+}
+/* Form layout */
+#form-info h2 {
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--color-headline-bg);
+  color: var(--color-headline-text-page);
+  margin-bottom: 1rem;
+  margin-top: 1.5em;
+}
+#form-info p {
+  text-align: center;
+}
+form {
+  accent-color: #ff4b00;
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+
+  .form-group {
+    display: grid;
+    gap: 0.1rlh;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 2px solid slateblue;
+  outline-offset: 1px;
+}
+/* Hover-styles */
+button:hover {
+  background: #222;
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
+
+/* Valideringsregler */
+.error-message {
+  display: none;
+}
+
+.form-group:has(:required) {
+  label::after {
+    content: "*";
+    color: red;
+  }
+}
+.form-group:has(:user-invalid) {
+  .error-message {
+    display: block;
+  }
+  input {
+    outline: 2px solid red;
+  }
+}
+
+#full_name_output,
+#age_output,
+#time_output,
+#location_output,
+#beeCount_output,
+#epipen_ja_output,
+#description_output {
+  font-weight: lighter;
+}
+
+#summary_font {
+  font-weight: bold;
 }
