@@ -38,7 +38,7 @@ textarea {
   background-color: #dbe2f5;
 }
 
-button {
+main section form button {
   background-color: #ff4b00;
   color: #fffae2;
   border-radius: 6px;
@@ -96,7 +96,7 @@ form {
   outline-offset: 1px;
 }
 /* Hover-styles */
-button:hover {
+main section form button:hover {
   background: #222;
 }
 /* Active-styles (imens man klikker) */

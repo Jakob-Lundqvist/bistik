@@ -1,6 +1,7 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#fceb94, #707070); /* page background /*
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -23,12 +24,12 @@
   --font-sub1-size: 1.7rem;
   --font-h2-size: 1.4rem;
   --font-h3-size: 1.3rem;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000, #fffae2);
+  --color-headline-text-page: light-dark(#fffae2, #272727);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #fffae2;
+  --color-text: light-dark(#000, #fffae2);
+  --color-text-inverted: light-dark(#fffae2, #272727);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,11 +38,11 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #fff;
+  --color-card-bg: light-dark(#fff, #272727);
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
+  --color-news-bg: light-dark(#fffae2, #494949);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
   --color-cta-newscard-bg: #ffa680;
   --color-cta-newscard-bg-inverted: #6f90eb;
 
@@ -63,7 +64,27 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fff;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#fff, #474747);
+  --color-infobox-1-bg: light-dark(#fceb94, #777153);
+  --color-infobox-2-bg: light-dark(#ffa680, #586556);
+
+  /* Header2 */
+  header nav ul li a {
+    color: #000;
+  }
+
+  input,
+  textarea {
+    background-color: light-dark(#dbe2f5, #474747);
+  }
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+nav button {
+  flex: 0 0 auto;
+  max-width: 200px;
+  background-color: light-dark(#fffae2, #474747);
 }
