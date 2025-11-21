@@ -23,8 +23,6 @@ function updateInfoboxBi() {
   Hvis du læser det her — det er for sent.
   `;
   document.querySelector("h2").innerHTML = "BISTIK  ALERT 🚨";
-  document.querySelector("#efficiency").style.backgroundColor = "#fceb94";
-  document.querySelector("#requirement").style.backgroundColor = "#ffa680";
 }
 document.querySelector("#epipen").addEventListener("click", updateInfoboxEpipen);
 
@@ -58,9 +56,6 @@ Kaldes også “Indendørs”.`;
 
 RING EFTER HJÆLP (ELLER DIN MOR)`;
   document.querySelector("h2").innerHTML = "💉ER DU ALLERGISK?";
-
-  document.querySelector("#efficiency").style.backgroundColor = "#fceb94";
-  document.querySelector("#requirement").style.backgroundColor = "#ffa680";
 }
 document.querySelector("#fly_swatter").addEventListener("click", updateInfoboxFlySwatter);
 
@@ -89,6 +84,4 @@ function updateInfoboxFlySwatter() {
     SE HVEM DER VINDER I BATTLE ROYALE: BI VS MENNESKE
   `;
   document.querySelector("h2").innerHTML = "⚔️ KILL OR BE KILLED";
-  document.querySelector("#efficiency").style.backgroundColor = "#fceb94";
-  document.querySelector("#requirement").style.backgroundColor = "#ffa680";
 }

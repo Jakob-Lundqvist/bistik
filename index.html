@@ -18,8 +18,9 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> <img src="img/Logo_bi.svg" alt="" /> </a>
         </div>
+        <button id="toggle">Light/darkmode</button>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
@@ -33,56 +34,115 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/fly_swatter.svg" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Den Store Bi-Overlevelsesguide</h1>
+          <p class="sub">Alt du skal vide for at overleve sommerens summende fjender – og bevare værdigheden undervejs.</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/hot.spots.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
+            <h2>Få hjælp til bæstet her</h2>
+            <p>En bi på krigsstien? Fortvivl ej. Her lærer du at holde hovedet koldt, selv når det summer højt.</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/picnic2.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
+            <h2>ER DU BLEVET ANGREBET</h2>
+            <p>Del din bi-katastrofe her! Fortæl hvad der skete, hvad du prøvede, og hvad du aldrig gør igen.</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Hævnens time</h3>
+          <p>En mand. En bi. En fluesmækker. Historien om mod, kløe og stædig værdighed.</p>
+          <img src="img/bee_fight.png" alt="news_img" />
+          <button popovertarget="news_popover1" class="cta_btn" href="">Læs mere</button>
+          <div id="news_popover1" popover>
+            <button popovertarget="news_popover1" class="close_popover">&#10006;</button>
+            <h4>Hævnens time - hverdagsvåben</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/bee_fight.png" alt="news img" />
+            <div class="news_card_text">
+              <div>
+                <p>
+                  Der findes få ting, der kan knække et voksent menneskes værdighed som et bistik. Ét sekund nyder du solen med kaffe og croissant, det næste laver du ninja-bevægelser med en avis som sværd. Når naturen går til angreb, gælder kun ét
+                  princip: brug, hvad du har. Kasket som skjold, køkkenrulle som fægtevåben, vandpistol som hævnredskab. Hårspray virker kun, hvis du ikke sætter pris på dine øjenbryn.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Jeg husker stadig Jens fra Varde. Han skulle bare grille, men endte i en fuld kamp mod én stædig bi – bevæbnet med fluesmækker og citronvand. Da støvet lagde sig, stod han der stukket og klistret, men med et blik, der sagde: “Jeg
+                  tabte måske slaget, men ikke æren.”
+                </p>
+                <p>Moralen er enkel: Du kan ikke vinde over bierne, men du kan i det mindste gøre det med stil – og et plaster klar i lommen.</p>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Våben, Væske og Værdighed</h3>
+          <p>En feltmanual til picnic-overlevende.</p>
+          <img src="img/picnic.png" alt="news_img" />
+          <button popovertarget="news_popover2" class="cta_btn" href="">Læs mere</button>
+
+          <div id="news_popover2" popover>
+            <button popovertarget="news_popover2" class="close_popover">&#10006;</button>
+            <h4>Våben, Væske og Værdighed</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/picnic.png" alt="news img" />
+            <div class="news_card_text">
+              <div>
+                <p>
+                  Sommeren lokker os ud i det fri med løfter om sol, frisk luft og kartoffelsalat. Men under den idylliske overflade lurer fjenden: bier, hvepse og alt med vinger, der elsker din saftevand mere end du gør. Overlevelse kræver
+                  disciplin, strategi – og en vis mængde værdighed, hvis du vil undgå at blive kendt som “ham der løb skrigende fra en myg.”
+                </p>
+              </div>
+              <div class="text_popup">
+                <p>
+                  Første regel i feltet: beskyt madpakken. Pak den stramt, dæk søde drikke, og hold marmeladen under konstant bevogtning. Anden regel: red dine venner, men kun hvis du kan gøre det uden at spilde din kaffe. Og tredje regel – den
+                  vigtigste – forbliv rolig. Panik er biernes ilt. Træk vejret, justér solbrillerne, og lad som om du har styr på situationen, selv når du kravler ind under et tæppe i panik.
+                </p>
+                <p>
+                  For veteraner i felten er hævn sjældent løsningen. Bierne vinder altid på antal og moral. I stedet må man acceptere nederlaget med rank ryg og kløende ankel. Som en vis picnic-kommandør engang sagde: “Du kan miste din mad, dit mod
+                  og din mayonnaise — men aldrig din værdighed. Og husk: hævn smager sødt, men honning smager bedre.”
+                </p>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Forskere advarere:</h3>
+          <p>Bier udvikler stikkevåben med Wi-Fi-forbindelse</p>
+          <img src="img/fake_news.png" alt="news_img" />
+          <button popovertarget="news_popover3" class="cta_btn" href="">Læs mere</button>
+          <div id="news_popover3" popover>
+            <button popovertarget="news_popover3" class="close_popover">&#10006;</button>
+            <h4>Våben, Væske og Værdighed</h4>
+            <time class="newsDate">6. APRIL 2025 – KL. 20:14</time>
+            <img src="img/fake_news.png" alt="news img" />
+            <p>
+              erden er i chok, efter forskere fra det fiktive Nordisk Institut for Naturkatastrofer og Kaffe har offentliggjort en rapport, der hævder, at bier nu samarbejder digitalt. Ifølge studiet har flere kolonier udviklet en form for “bi-fi” –
+              et trådløst netværk, der gør det muligt at koordinere stikangreb med millisekunds præcision. “Vi har registreret signaler fra bistader, der matcher mønstre kendt fra militære droner,” udtaler professor Bjarne Lynge, mens han febrilsk
+              sprayer sig med citronduft. “Det er kun et spørgsmål om tid, før de kan logge på vores routere.”
+            </p>
+            <p>
+              Rapporten anbefaler, at man holder alle søde drikke mindst to meter fra internetudstyr og undgår parfumer med navne som Honey Love eller Bee Mine. Enkelte borgere er allerede begyndt at beskytte sig ved at bære sølvpapirshatte og
+              kommunikere via røgsignaler for at undgå digitale bistik.
+            </p>
+            <p>
+              Myndighederne maner dog til ro. “Der er ingen grund til panik,” udtaler Miljøstyrelsen i en pressemeddelelse, “men vi anbefaler, at man ikke provokerer bierne… eller stiller spørgsmål om 5G.” Imens har bierne selv, gennem deres
+              PR-afdeling (en meget forvirret biavler i Holstebro), udsendt et kort statement: “Vi ønsker kun fred – og lidt sukker.”
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -115,5 +175,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

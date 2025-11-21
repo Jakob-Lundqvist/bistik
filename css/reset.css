@@ -76,3 +76,7 @@ select,
   white-space: nowrap;
   clip-path: inset(100%);
 }
+
+#main-disclamer-content img {
+  max-width: 3.6em;
+}
